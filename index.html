@@ -3,261 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
-    <link rel="stylesheet" href="about.css">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<head>
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  
 <body>
-
-
-
-    <!-- Header Section -->
     <header>
-        <div class="logo">Logo</div>
+        <h1>E-Commerce Site</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="#services">Services</a>
-                    <div class="dropdown-content">
-                        <a href="team.html">Team</a>
-                        <a href="faq.html">FAQ</a>
-                    </div>
-                </li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href=""</li>
-            </ul>
+            <nav>
+    <a href="login_signup.html"><button id="loginBtn">Login</button></a>
+    <a href="login_signup.html"><button id="signupBtn">Signup</button></a>
+    <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+</nav>
+
         </nav>
-        <div class="contact">Contact: 123-456-7890</div>
-        
     </header>
-
-    <!-- Popup Menu -->
-    <div class="popup-menu" id="popupMenu">
-        <span class="close-btn" onclick="toggleMenu()"></span>
-        <a href="#home">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Services</a>
-        <a href="support.html">Support</a>
-        
-    </div>
-
-    <section class="home">
-        <div class="container">
-           <div class="row">
-               <div class="home-text">
-                    <h1>Why us?</h1>
-                    <p class="animate-text">
-                       <span>Maximized Energy Collection</span>
-                       <span>Adaptive to Seasonal Changes</span>
-                       <span>Smart Tracking with IoT Integration</span>
-                       <span>Cost-Effectiveness Over Time</span>
-                       <span>Reduction of Land Use in Solar Farms</span>
-                    </p>
-               </div>
-           </div>
-        </div>
-    </section>
-   
-    <section class="main-section">
-        <div class="text-box">
-            
-            <h1>Invest in Your Future</h1>
-            <p>Discover opportunities with us and take a step towards a sustainable tomorrow.</p>
-            <div class="checklist">
-                <p> Reliable Investment</p>
-                <p> Community Driven</p>
-                <p> Environmentally Friendly</p>
+    
+  
+        <div id="cartModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close" id="closeCart">&times;</span>
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
             </div>
-            <button class="learn-more">Learn More</button></div><br><br>
-            <img src="unity.jpg" width="400px" height="400px">
-        </section>
-        
+        </div>
+    </main>
     
-     
-    
-    
-
-
-  
-  <!-- Info Cards Section (Separate) -->
-  <section class="info-cards">
-    <div class="card">
-      <img src="investment.jpg" alt="Certified">
-      <h3>CERTIFIED INVESTMENT</h3>
-      <p>Our certified investment program ensures that consumers can confidently invest in solar technology with peace of mind. Backed by a professional team and transparent processes, we prioritize security and compliance, giving you the assurance that your investment is in capable hands. Join us to support sustainable energy while enjoying the benefits of a reliable investment strategy.</p>
-    </div>
-    <div class="card">
-      <img src="Trust.jpg" alt="Trusted">
-      <h3>TRUSTED CLIENT</h3>
-      <p>Transparent and Trustworthy: We prioritize your peace of mind by offering clear insights into your investment and its positive impact on both your finances and the environment.</p>
-    </div>
-    <div class="card">
-      <img src="team.jpg" alt="Professional">
-      <h3>PROFESSIONAL TEAM</h3>
-      <p>At our company, we specialize in cutting-edge solar tracker technology that maximizes energy capture and efficiency. Our platform allows individuals to invest in these innovative solutions, supported by a dedicated professional team with extensive expertise. Join us in transforming renewable energy investment and play a vital role in creating a sustainable future while enhancing your returns.</p>
-    </div>
-  </section>
-  
-      
-  </section><BR><BR>
-    <h1 align="center">Our Team</h1>
-
-  <section class="team-section">
-    
-    <div class="team-member">
-      <img src="Priyam.jpg" alt="Team Member">
-      <div class="overlay">
-        <h3>Priyam</h3>
-        <p>C.E.O</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="team-member">
-        <img src="satvendra.jpg" alt="Team Member">
-        <div class="overlay">
-          <h3>Satvendra</h3>
-          <p>Hardware(Physical)</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <img src="udayan.jpg" alt="Team Member">
-        <div class="overlay">
-          <h3>Udayan</h3>
-          <p>Hardware(Digital)</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <img src="aditya.jpg" alt="Team Member">
-        <div class="overlay">
-          <h3>Aditya</h3>
-          <p>Website Head</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <img src="divyanshu.jpg" alt="Team Member">
-        <div class="overlay">
-          <h3>Divyanshu</h3>
-          <p>Sales Executive</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
- </section><br><br>
-    <!-- Add more team members in similar structure -->
-
-
-<section class="testimonials">
-<h2>Testimonials</h2>
-<div class="testimonial-carousel">
-    <div class="testimonial active">
-        <p><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9734;</span></p>
-        <p>"Absolutely love this product! It has changed my daily routine for the better."</p>
-        <p><strong>Bhavdeep</strong></p>
-        <img src="test1.jpg" alt="Emily Smith" class="testimonial-photo">
-    </div>
-    <div class="testimonial">
-        <p><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span></p>
-        <p>"I can feel the quality in every detail. Highly recommend!"</p>
-        <p><strong>Romit</strong></p>
-        <img src="test2.jpg" alt="John Doe" class="testimonial-photo">
-    </div>
-    <div class="testimonial">
-        <p><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9734;</span><span class="red-star">&#9734;</span></p>
-        <p>"Great customer service and fantastic products!"</p>
-        <p><strong>Shlok</strong></p>
-        <img src="test3.jpg" alt="Anna Lee" class="testimonial-photo">
-    </div>
-    <div class="testimonial">
-        <p><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span></p>
-        <p>"I love supporting a brand that cares about the environment!"</p>
-        <p><strong>K L Rahul</strong></p>
-        <img src="test4.jpg" alt="Mike Brown" class="testimonial-photo">
-    </div>
-    <div class="testimonial">
-        <p><span class="red-star">&#9733;</span><span class="red-star">&#9733;</span><span class="red-star">&#9734;</span><span class="red-star">&#9734;</span><span class="red-star">&#9734;</span></p>
-        <p>"Each product is made with such attention to detail!"</p>
-        <p><strong>Joseph</strong></p>
-        <img src="test5.jpg" alt="Lisa White" class="testimonial-photo">
-    </div>
-</div>
-</section>
-
-   
-   
-   <script>
-            const txts=document.querySelector(".animate-text").children,
-                  txtsLen=txts.length;
-              let index=0;
-             const textInTimer=3000,
-                   textOutTimer=2800;
-   
-            function animateText() {
-               for(let i=0; i<txtsLen; i++){
-                 txts[i].classList.remove("text-in","text-out");  
-               }
-               txts[index].classList.add("text-in");
-   
-               setTimeout(function(){
-                   txts[index].classList.add("text-out");              
-               },textOutTimer)
-   
-               setTimeout(function(){
-   
-                 if(index == txtsLen-1){
-                     index=0;
-                   }
-                  else{
-                      index++;
-                    }
-                   animateText();
-               },textInTimer); 
-            }
-            
-            window.onload=animateText;
-
-            
-            
-      
-   </script>
-
-    <script src="about.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

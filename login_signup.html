@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="file:///C:/Users/singh/OneDrive/Desktop/Hackathon/Enovato-images/clouds.mp4"  type="video/mp4"/>
+    </video>
+    <header>
+        <h1 style="text-align: center;" class="login">Login & Signup</h1>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <div style="margin-left: 463px;" id="loginForm" class="form">
+            <div class="carry">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button id="submitLogin">Login</button>
+            </div>
+                <p>Don't have an account? <a style="text-decoration: none; color: black;" href="#" id="showSignup">Signup</a></p>
+            </div>
+            <div id="signupForm" class="form hidden">
+                <h2>Signup</h2>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button id="submitSignup">Signup</button>
+                <p>Already have an account? <a  style="text-decoration: none; color: black;"href="#" id="showLogin">Login</a></p>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="login_signup.js"></script>
+</body>
+</html>
+<main>
+    <div class="form-container">
+        <!-- Existing login and signup forms -->
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cartSection" class="cart hidden">
+        <h2 style="text-align: center;">Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <button style="margin-left: 596px;" onclick="clearCart()">Clear Cart</button>
+    </div>
+</main>

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+footer {margin: 0;
+        padding: 0;}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-div1 {
+    background-image: url(file:///C:/Users/singh/OneDrive/Desktop/Hackathon/Enovato-images/620ea7732d1e1eb662d10e3d_GreenSpark-removebg-preview.png);
+    width: 25%;
+    height: 60px;
+    display: flex;
+}
+
+.logo-image {
+    height: 121px;
+  padding-top: -11px;
+  padding-left: 25px;
+  margin-top: -30px;
+  margin-left: 16px;
+}
+
+.header-div2 {
+    background-color: white;
+    width: 75%;
+    height: 60px;
+    display: flex;
+}
+
+.header-home-etc {
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.same-para {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.same-para1 {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #126e82;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.same-para:hover {
+    color: #126e82;
+}
+
+.main-image {
+    width: 100%;
+}
+
+/* Main section styling for text overlay */
+main {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main-para1 {position: absolute;
+    top: 32%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4em;
+    font-weight: 600;}
+.main-para2 {position: absolute;
+    top: 36%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: 600;}
+.main-para3 {position: absolute;
+    top: 45%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: 600;}
+
+.main-para4 {position: absolute;
+    top: 36%;
+    color: #126e82;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: 600;}
+
+.main-para5 {position: absolute;
+    top: 59%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    font-weight: 600;}
+
+    .main-para6 {position: absolute;
+        top: 65%;
+        left: 21%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3rem;
+        font-weight: 600;}
+
+        .GET-started {background-color: #126e82;
+            border: 1px solid black;
+            width: 170px;
+            height: 55px;
+            position: absolute;
+            top: 74%;
+            left: 10%;}
+
+.main-para7 {font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;}
+    
+.manegement-image1 {margin-top: 19%;}
+
+.manegement-image2 {margin-top: 30%;}
+
+.manegement-image3 {margin-top: 68px;}
+
+.manegement-para1 {margin-top: 7px;
+    font-size: 25px;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;}
+
+.manegement-para2 {margin-top: 16px;
+    font-size: 25px;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;}
+
+.manegement-para3 {margin-top: 25px;
+    font-size: 25px;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;}
+
+.para1 {font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;}
+
+.para2 {font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;}
+
+.para3 {font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;}
+
+.section2-para {text-align: center;
+    padding-top: 46px;
+    font-size: 35px;
+    font-family: "Roboto Condensed", sans-serif;}
+    
+    .background1 {
+        height: 41px;
+  padding-left: 43px;
+
+    }
+
+.slideshow-container {display: flex;}
+
+.number-div1 {color: white;
+                font-family: "Roboto Condensed", sans-serif;
+                font-size: 160%;}
+
+.number-div2 {color: white;
+                font-family: "Roboto Condensed", sans-serif;
+                font-size: 160%;}
+
+.number-div3 {color: white;
+                font-family: "Roboto Condensed", sans-serif;
+                font-size: 160%;}
+
+.number-div4 {color: white;
+                font-family: "Roboto Condensed", sans-serif;
+                font-size: 160%;}
+
+.number2-para1 {color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 85%;}
+
+.number2-para2 {color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 85%;}
+
+.number2-para3 {color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 85%;}
+
+.number2-para4 {color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 85%;}
+
+.footer-main-image {height: 65px;
+    padding-top: 70px;
+    padding-left: 40px;}
+
+.footer-main-para {font-family: "Roboto Condensed", sans-serif;
+    padding-left: 55px;
+    font-size: 18px;
+    letter-spacing: 0.03em;}
+
+    /* Blur effect styling */
+.blur-effect {
+    filter: blur(5px); /* Adjust the blur intensity if needed */
+    transition: filter 0.3s ease; /* Smooth transition when the blur is removed */
+}

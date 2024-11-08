@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services</a>
+                    <div class="dropdown-content">
+                        <a href="team.html">Team</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
+                <li><a href="support.html">Support</a></li>
+                
+            </ul>
+        </nav>
+        <div class="contact">Contact: 123-456-7890</div>
+        <div class="menu-btn" onclick="toggleMenu()">0 Menu</div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div class="popup-menu" id="popupMenu">
+        <span class="close-btn" onclick="toggleMenu()"></span>
+        <a href="#home">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Services</a>
+        <a href="support.html">Support</a>
+        
+    </div>  
+    <section class="faqs">
+        <h1 align="Center">Frequently Asked Questions</h1>
+        <br><br>
+        <div class="faq-item">
+            <h3 class="faq-question">Question 1 <span class="arrow down"></span></h3>
+            <p class="faq-answer">Answer to question 1.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Question 2 <span class="arrow down"></span></h3>
+            <p class="faq-answer">Answer to question 2.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Question 3 <span class="arrow down"></span></h3>
+            <p class="faq-answer">Answer to question 3.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Question 4 <span class="arrow down"></span></h3>
+            <p class="faq-answer">Answer to question 4.</p>
+        </div>
+    </section>
+    <script src="faq.js"></script>
+</body>
+</html>
