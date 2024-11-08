@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    background: #fff;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: #007BFF;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-form,.additional-info {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+
+
+
+
+.additional-info {
+    margin-top: 40px;
+}
+
+.resources-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.resource-item {
+    width: 48%; /* Two items per row */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.learn-more-btn {
+    margin-top: 10px;
+}
+
+.contact-info {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007BFF;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation */
+.animated {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Basic reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Navbar */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem; /* Increased padding for more space */
+    background-color: #333;
+    color: #fff;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 4rem; /* Adds space to the right of the logo */
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; /* Increased gap for more space between tabs */
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem; /* Adds padding inside each tab */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+.dropdown-content a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #555;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Contact and Button */
+.contact {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto; /* pushes it to the far right */
+    margin-right: 1.5rem; /* adds some space to the right */
+}
+
+/* Popup Menu */
+.popup-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup-menu.active {
+    display: flex;
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+
+ body{
+ 	margin:0;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 400;
+ }
+
+ *{
+ 	box-sizing: border-box;
+ }
+
+ .container{
+ 	max-width: 1170px;
+ 	width: 100%;
+ 	margin:auto;
+ }
