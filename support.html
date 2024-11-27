@@ -2,39 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Page</title>
+    <title>Responsive Contact Us Page Design using Html CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Logo</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="#services">Services</a>
-                    <div class="dropdown-content">
-                        <a href="team.html">Team</a>
-                        <a href="faq.html">FAQ</a>
-                    </div>
-                </li>
-                <li><a href="support.html">Support</a></li>
-                
-            </ul>
-        </nav>
-        <div class="contact">Contact: 123-456-7890</div>
-        <div class="menu-btn" onclick="toggleMenu()">0 Menu</div>
-    </header>
-
-    <!-- Popup Menu -->
-    <div class="popup-menu" id="popupMenu">
-        <span class="close-btn" onclick="toggleMenu()"></span>
-        <a href="#home">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Services</a>
-        <a href="support.html">Support</a>
+    
         
     </div>  
     <header>
@@ -48,80 +25,67 @@
 
     <main>
         <section id="contact-form" class="contact-form" style="display:none;">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="question1">Question 1:</label>
-                <input type="text" id="question1" name="question1" required>
-
-                <label for="question2">Question 2:</label>
-                <input type="text" id="question2" name="question2" required>
-
-                <label for="question3">Question 3:</label>
-                <input type="text" id="question3" name="question3" required>
-
-                <label for="question4">Question 4:</label>
-                <input type="text" id="question4" name="question4" required>
-
-                <label for="question5">Question 5:</label>
-                <input type="text" id="question5" name="question5" required>
-
-                <label for="question6">Question 6:</label>
-                <input type="text" id="question6" name="question6" required>
-
-                <label for="question7">Question 7:</label>
-                <input type="text" id="question7" name="question7" required>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+            <section id="section-wrapper">
+                <div class="box-wrapper">
+                    <div class="info-wrap">
+                        
+                        <h2 class="info-title">Contact Information</h2>
+                        <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+                        <ul class="info-details">
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Phone:</span> <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-globe"></i>
+                                <span>Website:</span> <a href="#">yoursite.com</a>
+                            </li>
+                        </ul>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="form-wrap">
+                        
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="570c327d-5dc0-45ec-8f48-6d6f48901456">
+                            <h2 class="form-title">Send us a message</h2>
+                            <div class="form-fields">
+                                <div class="form-group">
+                                    <input type="text" name="firstname" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="lastname" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="phone" placeholder="Phone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" id="Message" placeholder="Write your message"></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" value="Send Message" class="submit-button">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            </section>
 
         <section id="talk-now" class="talk-now" style="display:none;">
             <h2>Talk With Us Now</h2>
             <p id="availabilityMessage" class="animated">No one is available right now. Please try again later.</p>
         </section>
 
-        <section class="additional-info">
-            <h2>Additional Resources</h2>
-            <div class="resources-container">
-                <div class="resource-item">
-                    <h3>Service Center</h3>
-                    <p>Learn more about our services.</p>
-                    <button class="learn-more-btn">Learn More</button>
-                </div>
-                <div class="resource-item">
-                    <h3>Terms and Policies</h3>
-                    <p>Find out about our terms and policies.</p>
-                    <button class="learn-more-btn">Learn More</button>
-                </div>
-            </div>
-            <div class="resources-container">
-                <div class="resource-item">
-                    <h3>Contact Us</h3>
-                    <p>Feel free to reach out with any questions!</p>
-                    <div class="contact-info">
-                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                        <p><strong>Email:</strong> support@example.com</p>
-                        <p><strong>Store Address:</strong> 123 Main St, Anytown, USA</p>
-                    </div>
-                </div>
-                <div class="resource-item">
-                    <h3>Book Service Appointments</h3>
-                    <input type="text" placeholder="Enter your appointment details">
-                    <button class="learn-more-btn">Learn More</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Company Name</p>
-    </footer>
+        
 
     <script src="script.js"></script>
 </body>

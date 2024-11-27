@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+
+      <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+      <a class="home-link" href="index.html"><img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"></a>
+      <a href="about.html">About</a> 
+      <a href="products.html">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="login.html">Login</a>
+      
+    </div>
+  </nav>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <h1>We are taking Pre Orders!!</h1>
+        <div class="main_image">
+          <img src="image/p1.jpg" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="image/p1.jpg" onclick="img('image/p1.jpg')">
+          <img src="image/p2.jpg" onclick="img('image/p2.jpg')">
+          <img src="image/p3.jpg" onclick="img('image/p3.jpg')">
+          <img src="image/p4.jpg" onclick="img('image/p4.jpg')">
+          <img src="image/p5.jpg" onclick="img('image/p5.jpg')">
+          <img src="image/p6.jpg" onclick="img('image/p6.jpg')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Beats Solo3 Wireless</h3>
+        <h4> <small>$</small>999.99 </h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="sizes">
+            <form class="form">
+                <div class="select-size">
+                    <h3>Size:</h3>
+                    <label for="sm">
+                        <input type="radio" name="size" id="sm">
+                        <span>S</span>
+                    </label>
+                    <label for="m">
+                        <input type="radio" name="size" id="m">
+                        <span>M</span>
+                    </label>
+                    <label for="lg">
+                        <input type="radio" name="size" id="lg">
+                        <span>L</span>
+                    </label>
+                    <label for="xl">
+                        <input type="radio" name="size" id="xl">
+                        <span>XL</span>
+                    </label>
+                    <label for="xxl">
+                        <input type="radio" name="size" id="xxl">
+                        <span>XXL</span>
+                    </label>
+                </div>   
+            </form>
+        </div>
+        <div class="colors">
+            <form class="form">
+                <div class="select-color">
+                    <h3>Color:</h3>
+                    <label for="red">
+                        <input type="radio" name="color" id="red">
+                        <span class="color-1"></span>
+                    </label>
+                    <label for="green">
+                        <input type="radio" name="color" id="green">
+                        <span class="color-2"></span>
+                    </label>
+                    <label for="blue">
+                        <input type="radio" name="color" id="blue">
+                        <span class="color-3"></span>
+                    </label>
+                    <label for="yellow">
+                        <input type="radio" name="color" id="yellow">
+                        <span class="color-4"></span>
+                    </label>
+                </div>   
+            </form>
+        </div>
+        <div class="quantity">
+            <div class="select-quantity">
+                <h3>Quantity:</h3>
+                <input type="number" name="quantity" value="1">
+            </div>
+        </div>
+        <div class="sub-btn">
+            <button class="submit">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+  <script src="product.js"></script>
+</body>
+
+</html>

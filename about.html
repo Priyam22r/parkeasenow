@@ -12,54 +12,38 @@
   </head>
   
 <body>
+  <nav>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
 
+      <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+        <a class="home-link" href="index.html">Home</a>
+      <a href="about.html">About</a> 
+      <a href="support.html">Contact</a>
 
-
-    <!-- Header Section -->
-    <header>
-        <div class="logo">Logo</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="#services">Services</a>
-                    <div class="dropdown-content">
-                        <a href="team.html">Team</a>
-                        <a href="faq.html">FAQ</a>
-                    </div>
-                </li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href=""</li>
-            </ul>
-        </nav>
-        <div class="contact">Contact: 123-456-7890</div>
-        
-    </header>
-
-    <!-- Popup Menu -->
-    <div class="popup-menu" id="popupMenu">
-        <span class="close-btn" onclick="toggleMenu()">✖</span>
-        <a href="#home">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="team.html">Services</a>
-        <a href="support.html">Support</a>
-        
     </div>
-
+  </nav>
     <section class="home">
         <div class="container">
            <div class="row">
-               <div class="home-text">
-                    <h1>Why us?</h1>
-                    <p class="animate-text">
-                       <span>Maximized Energy Collection</span>
-                       <span>Adaptive to Seasonal Changes</span>
-                       <span>Smart Tracking with IoT Integration</span>
-                       <span>Cost-Effectiveness Over Time</span>
-                       <span>Reduction of Land Use in Solar Farms</span>
-                    </p>
-               </div>
+            <div class="home-text">
+              
+              <h1>Why us?</h1>
+              <p class="animate-text">
+                  <span>Seamless Parking Experience</span>
+                  <span>Real-Time Availability Updates</span>
+                  <span>Eco-Friendly Solutions for Sustainable Parking</span>
+                  <span>Smart Parking with IoT Technology Integration</span>
+                  <span>Convenient, secure, and fast parking at your fingertips.</span>
+              </p>
+          </div>
            </div>
         </div>
     </section>
@@ -70,12 +54,12 @@
             <h1>Invest in Your Future</h1>
             <p>Discover opportunities with us and take a step towards a sustainable tomorrow.</p>
             <div class="checklist">
-                <p>✓ Reliable Investment</p>
-                <p>✓ Community Driven</p>
-                <p>✓ Environmentally Friendly</p>
+                <p>✓ Invest in Smart Parking Solutions for Your City</p>
+                <p>✓ Maximize Efficiency, Minimize Parking Hassle"</p>
+                <p>✓ Bring Technology to Parking Spaces with ParkEaseNow</p>
             </div>
             <button class="learn-more">Learn More</button></div><br><br>
-            <img src="unity.jpg" width="400px" height="400px">
+            <img src="img2.jpg" width="400px" height="400px">
         </section>
         
     
@@ -88,19 +72,19 @@
   <!-- Info Cards Section (Separate) -->
   <section class="info-cards">
     <div class="card">
-      <img src="investment.jpg" alt="Certified">
-      <h3>CERTIFIED INVESTMENT</h3>
-      <p>Our certified investment program ensures that consumers can confidently invest in solar technology with peace of mind. Backed by a professional team and transparent processes, we prioritize security and compliance, giving you the assurance that your investment is in capable hands. Join us to support sustainable energy while enjoying the benefits of a reliable investment strategy.</p>
+      <img src="certified.png" alt="Certified">
+      <h3>CERTIFIED PARKING</h3>
+      <p>Our parking systems are certified and built to offer reliability, security, and ease of use</p>
     </div>
     <div class="card">
-      <img src="Trust.jpg" alt="Trusted">
-      <h3>TRUSTED CLIENT</h3>
-      <p>Transparent and Trustworthy: We prioritize your peace of mind by offering clear insights into your investment and its positive impact on both your finances and the environment.</p>
+      <img src="GREEEEN.jpg" alt="Trusted">
+      <h3>ECO-FRIENDLY PARKING</h3>
+      <p>Our systems help reduce carbon footprints with green parking technologies and electric vehicle charging stations.</p>
     </div>
     <div class="card">
-      <img src="team.jpg" alt="Professional">
-      <h3>PROFESSIONAL TEAM</h3>
-      <p>At our company, we specialize in cutting-edge solar tracker technology that maximizes energy capture and efficiency. Our platform allows individuals to invest in these innovative solutions, supported by a dedicated professional team with extensive expertise. Join us in transforming renewable energy investment and play a vital role in creating a sustainable future while enhancing your returns.</p>
+      <img src="IOt.jpg" alt="Professional">
+      <h3>EFFICIENT AND CONVENIENT PARKING</h3>
+      <p>Say goodbye to the hassle of parking. Our intelligent parking solutions make finding and reserving parking spaces quick and effortless for drivers everywhere.</p>
     </div>
   </section>
   
@@ -111,10 +95,10 @@
   <section class="team-section">
     
     <div class="team-member">
-      <img src="Priyam.jpg" alt="Team Member">
+      <img src="2a211c53-8c7c-4aa5-850a-d330920a1641.jpg" alt="Team Member">
       <div class="overlay">
         <h3>Priyam</h3>
-        <p>C.E.O</p>
+        <p>Developer</p>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
@@ -125,10 +109,10 @@
     </div>
 
     <div class="team-member">
-        <img src="satvendra.jpg" alt="Team Member">
+        <img src="WhatsApp Image 2024-11-22 at 19.16.31_5892ed59.jpg" alt="Team Member">
         <div class="overlay">
-          <h3>Satvendra</h3>
-          <p>Hardware(Physical)</p>
+          <h3>Vidyansh</h3>
+          <p>Tech Architect</p>
           <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -138,47 +122,7 @@
         </div>
       </div>
 
-      <div class="team-member">
-        <img src="udayan.jpg" alt="Team Member">
-        <div class="overlay">
-          <h3>Udayan</h3>
-          <p>Hardware(Digital)</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <img src="aditya.jpg" alt="Team Member">
-        <div class="overlay">
-          <h3>Aditya</h3>
-          <p>Website Head</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <img src="divyanshu.jpg" alt="Team Member">
-        <div class="overlay">
-          <h3>Divyanshu</h3>
-          <p>Sales Executive</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
+      
  </section><br><br>
     <!-- Add more team members in similar structure -->
 
